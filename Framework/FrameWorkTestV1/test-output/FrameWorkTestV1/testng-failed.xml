@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FrameWorkTestV1]">
+  <listeners>
+    <listener class-name="com.FrameWorkTestV1.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Automation framework(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.FrameWorkTestV1.testCases.DataDrivenTest">
+        <methods>
+          <include name="loginDDT" invocation-numbers="1"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.FrameWorkTestV1.testCases.DataDrivenTest -->
+    </classes>
+  </test> <!-- Automation framework(failed) -->
+</suite> <!-- Failed suite [FrameWorkTestV1] -->
